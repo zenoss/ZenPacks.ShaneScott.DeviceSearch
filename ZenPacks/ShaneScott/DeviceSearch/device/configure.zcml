@@ -1,0 +1,8 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+    <subscriber provides="Products.Zuul.search.ISearchProvider"
+        for="Products.ZenModel.DataRoot.DataRoot"
+        factory=".adapters.DeviceSearchProvider"
+        />
+
+</configure>
